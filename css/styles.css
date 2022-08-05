@@ -350,17 +350,20 @@ section.features {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: aquamarine;
-}
+  }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
 }
 
-.team-soc-link:hover.team-soc-icon,
-.team-soc-link:focus.team-soc-icon {
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
   fill: #ffffff;
+}
+
+.team-soc-icon{
+    fill: rgba(175, 177, 184, 1);
 }
 /* -------------Footer---------------- */
 .footer {
