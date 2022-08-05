@@ -103,13 +103,21 @@ a > span {
   color: var(--secondary-title-color);
 }
 
-.header-item.tel.envelop:before {
-  content: "\2709";
-}
 
 .header-item:hover,
 .header-item:focus {
   color: var(--accent-color);
+}
+.header-icon:hover
+.header-icon:focus{
+/* fill: var(--accent-color); */
+}
+
+.header-icon{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    /* fill: currentColor; */
 }
 /* -------------hero---------------- */
 .hero {
@@ -183,14 +191,14 @@ section.features {
   display: flex;
   justify-content: space-between;
   margin: 0;
-
+  gap: 30px;
+ 
   letter-spacing: 0.03em;
 }
 
-.list-item:not(:last-child) {
-  margin-right: 30px;
-  /* column-gap: 30px; */
-}
+.list-item {
+  flex-basis: calc(100%/4-30px);
+ }
 
 .list-item::before {
   display: block;
@@ -223,6 +231,7 @@ section.features {
 .feature-item {
   margin: 0;
   margin-bottom: 10px;
+  margin-top: 30px;
 
   font-weight: 700;
   font-size: 14px;
