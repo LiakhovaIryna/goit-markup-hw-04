@@ -103,21 +103,19 @@ a > span {
   color: var(--secondary-title-color);
 }
 
-
 .header-item:hover,
 .header-item:focus {
   color: var(--accent-color);
 }
-.header-icon:hover
-.header-icon:focus{
-/* fill: var(--accent-color); */
-}
 
-.header-icon{
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    /* fill: currentColor; */
+/* .header-icon:hover
+.header-icon:focus{
+fill: var(--accent-color);
+} */
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /* -------------hero---------------- */
 .hero {
@@ -192,15 +190,27 @@ section.features {
   justify-content: space-between;
   margin: 0;
   gap: 30px;
- 
+
   letter-spacing: 0.03em;
 }
 
 .list-item {
-  flex-basis: calc(100%/4-30px);
- }
+  outline: 1px solid tomato;
+  flex-basis: calc(100% / 4-30px);
+}
+.feature-icon {
+  outline: 1px solid teal;
+  width: 70px;
+  height: 70px;
+}
+.features-icon {
+  height: 120px;
+  padding: 25px 100px;
 
-.list-item::before {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+/* .list-item::before {
   display: block;
   content: "";
   height: 120px;
@@ -226,7 +236,7 @@ section.features {
 
 .list-item.icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 .feature-item {
   margin: 0;
@@ -321,10 +331,36 @@ section.features {
 
 .team-text {
   margin: 0;
+  margin-bottom: 16px;
 
   font-weight: 400;
   color: var(--secondary-title-color);
   text-align: center;
+}
+
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-soc-link:hover.team-soc-icon,
+.team-soc-link:focus.team-soc-icon {
+  fill: #ffffff;
 }
 /* -------------Footer---------------- */
 .footer {
