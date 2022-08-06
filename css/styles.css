@@ -195,13 +195,12 @@ section.features {
 }
 
 .list-item {
-  outline: 1px solid tomato;
-  flex-basis: calc(100% / 4-30px);
+    flex-basis: calc(100% / 4-30px);
 }
 .feature-icon {
-  outline: 1px solid teal;
-  width: 70px;
+    width: 70px;
   height: 70px;
+  fill: #000000;
 }
 .features-icon {
   height: 120px;
@@ -338,12 +337,13 @@ section.features {
   text-align: center;
 }
 
-.team-soc {
+.team-soc, .footer-soc {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.team-soc-link {
+
+.team-soc-link, .footer-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,21 +353,68 @@ section.features {
   }
 
 .team-soc-link:hover,
-.team-soc-link:focus {
+.team-soc-link:focus, .footer-soc-link:hover,
+.footer-soc-link:focus{
   background-color: var(--accent-color);
 }
 
 .team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
+.team-soc-link:focus .team-soc-icon, .footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon{
   fill: #ffffff;
 }
 
-.team-soc-icon{
+.team-soc-icon, .footer-soc-icon{
     fill: rgba(175, 177, 184, 1);
 }
+/* -------------Klients---------------- */
+.klients-title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.klient-logo{
+  
+  display: flex;
+  gap: 30px;
+}
+
+.klient-logo-item{
+display: block;
+  
+}
+
+.klient-logo-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+      
+}
+.klient-logo-icon{
+  fill: rgba(175, 177, 184, 1);
+}
+
+.klient-logo-link:hover,
+.klient-logo-link:focus{
+  border: 1px solid var(--accent-color);
+}
+
+.klient-logo-link:hover .klient-logo-icon,
+.klient-logo-link:focus .klient-logo-icon{
+  fill: var(--accent-color);
+}
+
 /* -------------Footer---------------- */
 .footer {
-  padding-top: 60px;
+    padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--secondary-background-color);
@@ -376,6 +423,31 @@ section.features {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+footer>.container{
+display: flex;
+align-items: baseline;
+gap:  70px;
+}
+
+.footer-container{
+  justify-content: start;
+   max-width: 250px;
+  margin-right: 0;
+  margin-left: 0;
+  }
+
+.footer-title{
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+      color: #FFFFFF;
+    }
 
 .footer-logo {
   display: block;
@@ -417,6 +489,13 @@ address > a {
 .footer-item:hover,
 .footer-item:focus {
   color: var(--accent-color);
+}
+.footer-soc-link{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-icon{
+  fill: #ffffff;
 }
 
 /* -------------PORTFOLIO---------------- */
