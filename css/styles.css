@@ -185,17 +185,20 @@ section.features {
 }
 
 .list-item {
-	flex-basis: calc(100% / 4-30px);
+  	flex-basis: calc(100% / 4-30px);
+  
 }
 .feature-icon {
-	width: 70px;
+ 	width: 70px;
 	height: 70px;
 	fill: #000000;
 }
 .features-icon {
+  display: flex;
+  justify-content: center;
+    align-items: center;
 	height: 120px;
-	padding: 25px 100px;
-
+	
 	background: #f5f4fa;
 	border-radius: 4px;
 }
@@ -361,6 +364,7 @@ section.features {
 	width: 170px;
 	height: 92px;
 	border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
 }
 .klient-logo-icon {
 	fill: rgba(175, 177, 184, 1);
@@ -524,6 +528,8 @@ li.gallery {
 	text-decoration: none;
 	text-transform: capitalize;
 	cursor: pointer;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 li.list-btn:not(:nth-last-child(-n + 1)) {
